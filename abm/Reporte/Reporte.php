@@ -24,7 +24,8 @@
                 <div style="margin: 5px;" class="panel panel-default">
                     <div class="panel-body">
                         <table class="table table-hover">
-                            <tr><th>
+                            <tr>
+                                <th>
                                     Fecha de Modificacion
                                 </th>
                                 <th>

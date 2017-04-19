@@ -10,5 +10,6 @@
 <link href="../../css/media.css" rel="stylesheet" type="text/css"/>
 <link href="../../css/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <link href="../../css/jquery-ui.theme.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/main.css" rel="stylesheet" type="text/css"/>
 
 

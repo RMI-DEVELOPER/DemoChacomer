@@ -10,9 +10,6 @@ and open the template in the editor.
         include '../../head.php';
         ?>
         <script>
-            $(function () {
-                $("#tabs").tabs();
-            });
             function enviar() {
                 $(".modal").modal();
             }
@@ -41,7 +38,7 @@ and open the template in the editor.
                                     <textarea class="form-control" rows="3"></textarea>
                                 </div>
                             </div>
-                            
+
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -84,16 +81,33 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="row">
-                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 30px;" id="tabs">
-                            <ul class="nav nav-tabs">
-                                <li><a href="#tabs-1">Ficha Técnica</a></li>
-                                <li><a href="#tabs-2">Manuales</a></li>
-                                <li><a href="#tabs-3">Catalogo</a></li>
-                                <li><a href="#tabs-4">Curvas</a></li>
-                            </ul>
-                            <div id="tabs-1">
-                                <label>Documentos:</label>
+                        <ul style="margin: 10px;margin-top: 50px;" class="nav nav-tabs" id="myTabs" role="tablist"> 
+                            <li role="presentation" class="active">
+                                <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a>
+                            </li> 
+                            <li role="presentation">
+                                <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Profile</a>
+                            </li> 
+                            <li role="presentation" class="dropdown"> 
+                                <a href="#" class="dropdown-toggle" id="myTabDrop1" data-toggle="dropdown" aria-controls="myTabDrop1-contents">
+                                    Dropdown 
+                                    <span class="caret">
 
+                                    </span>
+                                </a> 
+                                <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents"> 
+                                    <li>
+                                        <a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a>
+                                    </li> 
+                                    <li>
+                                        <a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
+                                </ul> 
+                            </li> 
+                        </ul> 
+
+                        <div style="margin: 20px;" class="tab-content" id="myTabContent"> 
+                            <div class="tab-pane fade in active" role="tabpanel" id="home" aria-labelledby="home-tab"> 
+                                <label>Documentos:</label>
                                 <ul>
                                     <li>
                                         <p> <a href="#">Ficha Tecnica.pdf    </a><button class="btn btn-primary" onclick="enviar();">Enviar</button></p>
@@ -115,20 +129,18 @@ and open the template in the editor.
                                         <p> <a href="#">Video2   </a></p>
                                     </li>
                                 </ul>
-                            </div>
-                            <div id="tabs-2">
-                                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                            </div>
-                            <div id="tabs-3">
-                                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                            </div>
-                            <div id="tabs-4">
-                                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                            </div>
-                        </div>
+                            </div> 
+                            <div class="tab-pane fade" role="tabpanel" id="profile" aria-labelledby="profile-tab"> 
+                                <p>Food r butcher vero sint qui sapiente accusamus tattooed echo park.</p> 
+                            </div> 
+                            <div class="tab-pane fade" role="tabpanel" id="dropdown1" aria-labelledby="dropdown1-tab">
+                                <p>Etsy mixtape wayfarer Pitchfork sustainable tofu synth chambray yr.</p> 
+                            </div> <div class="tab-pane fade" role="tabpanel" id="dropdown2" aria-labelledby="dropdown2-tab"> 
+                                <p>Trust fund seitan letterper marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p> 
+                            </div> 
+                        </div> 
                     </div>
+
                 </div>
             </div>
         </div>
