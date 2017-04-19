@@ -83,30 +83,21 @@ and open the template in the editor.
                     <div class="row">
                         <ul style="margin: 10px;margin-top: 50px;" class="nav nav-tabs" id="myTabs" role="tablist"> 
                             <li role="presentation" class="active">
-                                <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a>
+                                <a href="#fichaTecnica" id="ficha-tab" role="tab" data-toggle="tab" aria-controls="ficha" aria-expanded="true">Ficha Técnica</a>
                             </li> 
                             <li role="presentation">
-                                <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Profile</a>
+                                <a href="#manuales" role="tab" id="manuales-tab" data-toggle="tab" aria-controls="manuales">Manuales</a>
                             </li> 
-                            <li role="presentation" class="dropdown"> 
-                                <a href="#" class="dropdown-toggle" id="myTabDrop1" data-toggle="dropdown" aria-controls="myTabDrop1-contents">
-                                    Dropdown 
-                                    <span class="caret">
-
-                                    </span>
-                                </a> 
-                                <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents"> 
-                                    <li>
-                                        <a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a>
-                                    </li> 
-                                    <li>
-                                        <a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
-                                </ul> 
+                            <li role="presentation">
+                                <a href="#catalogo" role="tab" id="catalogo-tab" data-toggle="tab" aria-controls="catalogo">Catalogo</a>
                             </li> 
+                            <li role="presentation">
+                                <a href="#curvas" role="tab" id="curvas-tab" data-toggle="tab" aria-controls="curvas">Curvas</a>
+                            </li>  
                         </ul> 
 
                         <div style="margin: 20px;" class="tab-content" id="myTabContent"> 
-                            <div class="tab-pane fade in active" role="tabpanel" id="home" aria-labelledby="home-tab"> 
+                            <div class="tab-pane fade in active" role="tabpanel" id="fichaTecnica" aria-labelledby="ficha-tab"> 
                                 <label>Documentos:</label>
                                 <ul>
                                     <li>
@@ -130,13 +121,14 @@ and open the template in the editor.
                                     </li>
                                 </ul>
                             </div> 
-                            <div class="tab-pane fade" role="tabpanel" id="profile" aria-labelledby="profile-tab"> 
+                            <div class="tab-pane fade" role="tabpanel" id="manuales" aria-labelledby="manuales-tab"> 
                                 <p>Food r butcher vero sint qui sapiente accusamus tattooed echo park.</p> 
                             </div> 
-                            <div class="tab-pane fade" role="tabpanel" id="dropdown1" aria-labelledby="dropdown1-tab">
-                                <p>Etsy mixtape wayfarer Pitchfork sustainable tofu synth chambray yr.</p> 
-                            </div> <div class="tab-pane fade" role="tabpanel" id="dropdown2" aria-labelledby="dropdown2-tab"> 
-                                <p>Trust fund seitan letterper marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p> 
+                            <div class="tab-pane fade" role="tabpanel" id="catalogo" aria-labelledby="catalogo-tab"> 
+                                <p>Food r butcher vero sint qui sapiente accusamus tattooed echo park.</p> 
+                            </div> 
+                            <div class="tab-pane fade" role="tabpanel" id="curvas" aria-labelledby="curvas-tab"> 
+                                <p>Food r butcher vero sint qui sapiente accusamus tattooed echo park.</p> 
                             </div> 
                         </div> 
                     </div>
