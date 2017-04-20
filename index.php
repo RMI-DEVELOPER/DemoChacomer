@@ -67,8 +67,9 @@
             <div class="row">
                 <div class="menu">
                     <ul style="margin-top: 5px;" class="nav nav-pills nav-stacked ">
-                        <li role="presentation" class="active"><a href="abm/Busqueda/Busqueda.php" target="central">Busqueda</a></li>
+                        <li role="presentation"><a href="abm/Busqueda/Busqueda.php" target="central">Busqueda</a></li>
                         <li role="presentation"><a href="abm/Reporte/Reporte.php" target="central">Reporte</a></li>
+                        <li role="presentation"><a href="abm/Auditoria/Auditoria.php" target="central">Administracion</a></li>
                         <li role="presentation"><a href="abm/Auditoria/Auditoria.php" target="central">Auditoria</a></li>
                     </ul>
                 </div>
